@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Staircase {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		int number=sc.nextInt();
+		
+		for(int i =1;i<=number;i++) {
+			
+			
+			for(int j=0;j<number-i;j++)
+			System.out.printf(" ");
+			
+			for(int z=0;z<i;z++)
+				System.out.printf("#");
+			
+			System.out.println();
+				
+			
+		}
+		
+		
+		sc.close();
+		
+	}
+
+}
