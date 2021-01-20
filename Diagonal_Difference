@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Diagonal_Difference {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		int first_dia = 0,second_dia=0;
+		int array[][]=new int[100][100];
+		int diagonal=sc.nextInt();
+		
+		for (int i =0 ;i<diagonal;i++) {
+			for(int j=0;j<diagonal;j++)
+				 array[i][j] = sc.nextInt();
+		}
+		
+		
+		for (int i =0 ;i<diagonal;i++) {
+			for(int j=0;j<diagonal;j++) {
+				if(i==j)first_dia+=array[i][j];
+				if (i+j+1==diagonal)second_dia+=array[i][j];
+		}}
+		
+		System.out.println(Math.abs(first_dia-second_dia));
+		
+		
+		
+		
+		
+		sc.close();
+		
+		
+	}
+
+}
