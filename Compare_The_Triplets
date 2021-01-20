@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Compare_the_Triplets {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int first_array[]=new int[100];
+		int second_array[]=new int[100];
+		int first=0,second=0;
+		Scanner sc=new Scanner(System.in);
+		
+		for(int i=0;i<3;i++) {
+			first_array[i]=sc.nextInt();
+			}
+		for(int i=0;i<3;i++) {
+			second_array[i]=sc.nextInt();
+			}
+		
+		for(int i=0;i<3;i++) {
+			if(first_array[i]>second_array[i]) first++;
+			else if(first_array[i]<second_array[i])second++;
+			
+			}
+		
+		System.out.println(first+" "+second);
+		
+		
+		sc.close();
+	}
+
+}
