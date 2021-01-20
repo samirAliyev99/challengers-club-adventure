@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Plus_Minus {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int num_posi=0,num_neg=0,num_zero=0;
+		int array[]=new int[100];
+		int diagonal=sc.nextInt();
+		
+		for (int i =0 ;i<diagonal;i++) {
+			array[i] = sc.nextInt();
+		if (array[i]>0)num_posi++;
+		else if (array[i]<0)num_neg++;
+		else num_zero++;
+		}
+		
+		System.out.println((num_posi/1.0)/diagonal);
+		System.out.println((num_neg/1.0)/diagonal);
+		System.out.println((num_zero/1.0)/diagonal);
+		
+		
+		sc.close();
+	}
+
+}
